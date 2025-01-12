@@ -1,18 +1,13 @@
+// JavaScript to fetch the visit count and display it
 document.addEventListener("DOMContentLoaded", function() {
-    // Get all conversation headers (the categories like school, office, etc.)
-    const conversationHeaders = document.querySelectorAll('.conversation-header');
-    
-    conversationHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const target = this.getAttribute('data-target'); // Get target section id
-            const section = document.getElementById(target);
-
-            // Toggle the display of the corresponding section
-            if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
+    // Fetch the visit counter from the PHP file
+    fetch('counter.php')
+        .then(response => response.text())
+        .then(data => {
+            // Display the counter value in the footer
+            document.getElementById('visitCounter').textContent = data;
+        })
+        .catch(error => {
+            console.error('Error fetching the counter:', error);
         });
-    });
 });
