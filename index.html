@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,29 @@
         body {
             background-color: #f8f9fa;
         }
+
         .footer {
             background-color: #343a40;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
+        .conversation-section {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .conversation-header {
+            cursor: pointer;
+        }
+
+        .conversation-header:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
+
 <body>
     <div class="container mt-5">
         <h2 class="text-center">English Speaking Helper</h2>
@@ -29,148 +45,156 @@
                     <!-- School Conversation -->
                     <li class="list-group-item conversation-header" data-target="schoolConversation">
                         School Conversation
-                        <div id="schoolConversation" class="conversation-section">
-                            <h5>Conversation Example 1</h5>
-                            <p><strong>Student 1:</strong> Hi! How are you?</p>
-                            <p><strong>Student 2:</strong> I am good, thank you! How about you?</p>
-                            <p><strong>Student 1:</strong> I'm doing well, thanks for asking. What did you do over the weekend?</p>
-                            <p><strong>Student 2:</strong> I went to the park with my family. What about you?</p>
-                            <p><strong>Student 1:</strong> I stayed home and studied for the test.</p>
-
-                            <h5>Conversation Example 2</h5>
-                            <p><strong>Student 1:</strong> What is your favorite subject?</p>
-                            <p><strong>Student 2:</strong> I love history. How about you?</p>
-                            <p><strong>Student 1:</strong> I like mathematics. It's challenging but interesting.</p>
-
-                            <h5>Conversation Example 3</h5>
-                            <p><strong>Student 1:</strong> Can you help me with my homework?</p>
-                            <p><strong>Student 2:</strong> Sure! What’s the problem?</p>
-                            <p><strong>Student 1:</strong> I don’t understand this math problem.</p>
-                            <p><strong>Student 2:</strong> No worries. Let me explain it to you.</p>
-
-                            <h5>Conversation Example 4</h5>
-                            <p><strong>Student 1:</strong> What are you doing this afternoon?</p>
-                            <p><strong>Student 2:</strong> I’m going to the library to study. Would you like to join me?</p>
-                            <p><strong>Student 1:</strong> Sounds good. I’ll meet you there!</p>
-                        </div>
                     </li>
+                    <div id="schoolConversation" class="conversation-section">
+                        <h5>Conversation Example 1</h5>
+                        <p><strong>Student 1:</strong> Hi! How are you?</p>
+                        <p><strong>Student 2:</strong> I am good, thank you! How about you?</p>
+                        <p><strong>Student 1:</strong> I'm doing well, thanks for asking. What did you do over the weekend?</p>
+                        <p><strong>Student 2:</strong> I went to the park with my family. What about you?</p>
+                        <p><strong>Student 1:</strong> I stayed home and studied for the test.</p>
+
+                        <h5>Conversation Example 2</h5>
+                        <p><strong>Student 1:</strong> What is your favorite subject?</p>
+                        <p><strong>Student 2:</strong> I love history. How about you?</p>
+                        <p><strong>Student 1:</strong> I like mathematics. It's challenging but interesting.</p>
+
+                        <h5>Conversation Example 3</h5>
+                        <p><strong>Student 1:</strong> Can you help me with my homework?</p>
+                        <p><strong>Student 2:</strong> Sure! What’s the problem?</p>
+                        <p><strong>Student 1:</strong> I don’t understand this math problem.</p>
+                        <p><strong>Student 2:</strong> No worries. Let me explain it to you.</p>
+
+                        <h5>Conversation Example 4</h5>
+                        <p><strong>Student 1:</strong> What are you doing this afternoon?</p>
+                        <p><strong>Student 2:</strong> I’m going to the library to study. Would you like to join me?</p>
+                        <p><strong>Student 1:</strong> Sounds good. I’ll meet you there!</p>
+                    </div>
 
                     <!-- Office Conversation -->
                     <li class="list-group-item conversation-header" data-target="officeConversation">
                         Office Conversation
-                        <div id="officeConversation" class="conversation-section">
-                            <h5>Conversation Example 1</h5>
-                            <p><strong>Employee 1:</strong> Good morning! How’s your day going so far?</p>
-                            <p><strong>Employee 2:</strong> Good morning! It's going well. How about yours?</p>
-                            <p><strong>Employee 1:</strong> It’s been productive. I’m working on the report.</p>
-                            <p><strong>Employee 2:</strong> That’s great! Let me know if you need any help.</p>
-
-                            <h5>Conversation Example 2</h5>
-                            <p><strong>Manager:</strong> I need a quick update on the project’s status. Can you provide it?</p>
-                            <p><strong>Employee:</strong> Sure! We’ve completed the initial phase, and the next phase is in progress. We should meet the deadline.</p>
-                            <p><strong>Manager:</strong> That’s good to hear. Keep up the good work.</p>
-
-                            <h5>Conversation Example 3</h5>
-                            <p><strong>Employee 1:</strong> Can you help me with this task? I’m having some issues.</p>
-                            <p><strong>Employee 2:</strong> Of course! Let’s sit down and go through it together.</p>
-
-                            <h5>Conversation Example 4</h5>
-                            <p><strong>Employee 1:</strong> Do you have time for a meeting this afternoon?</p>
-                            <p><strong>Employee 2:</strong> Yes, I have an open slot at 3 PM. Does that work for you?</p>
-                            <p><strong>Employee 1:</strong> Perfect! I’ll send the calendar invite.</p>
-
-                            <h5>Conversation Example 5</h5>
-                            <p><strong>Employee:</strong> I need to leave early today. Is that okay?</p>
-                            <p><strong>Manager:</strong> Yes, that’s fine. Just make sure to complete your tasks before you leave.</p>
-                        </div>
                     </li>
+                    <div id="officeConversation" class="conversation-section">
+                        <h5>Conversation Example 1</h5>
+                        <p><strong>Employee 1:</strong> Good morning! How’s your day going so far?</p>
+                        <p><strong>Employee 2:</strong> Good morning! It's going well. How about yours?</p>
+                        <p><strong>Employee 1:</strong> It’s been productive. I’m working on the report.</p>
+                        <p><strong>Employee 2:</strong> That’s great! Let me know if you need any help.</p>
+
+                        <h5>Conversation Example 2</h5>
+                        <p><strong>Manager:</strong> I need a quick update on the project’s status. Can you provide it?</p>
+                        <p><strong>Employee:</strong> Sure! We’ve completed the initial phase, and the next phase is in progress. We should meet the deadline.</p>
+                        <p><strong>Manager:</strong> That’s good to hear. Keep up the good work.</p>
+
+                        <h5>Conversation Example 3</h5>
+                        <p><strong>Employee 1:</strong> Can you help me with this task? I’m having some issues.</p>
+                        <p><strong>Employee 2:</strong> Of course! Let’s sit down and go through it together.</p>
+
+                        <h5>Conversation Example 4</h5>
+                        <p><strong>Employee 1:</strong> Do you have time for a meeting this afternoon?</p>
+                        <p><strong>Employee 2:</strong> Yes, I have an open slot at 3 PM. Does that work for you?</p>
+                        <p><strong>Employee 1:</strong> Perfect! I’ll send the calendar invite.</p>
+
+                        <h5>Conversation Example 5</h5>
+                        <p><strong>Employee:</strong> I need to leave early today. Is that okay?</p>
+                        <p><strong>Manager:</strong> Yes, that’s fine. Just make sure to complete your tasks before you leave.</p>
+                    </div>
 
                     <!-- Formal Meeting Conversation -->
                     <li class="list-group-item conversation-header" data-target="formalMeetingConversation">
                         Formal Meeting Conversation
-                        <div id="formalMeetingConversation" class="conversation-section">
-                            <h5>Conversation Example 1</h5>
-                            <p><strong>Boss:</strong> Good afternoon, everyone. Let’s begin the meeting.</p>
-                            <p><strong>Employee 1:</strong> Good afternoon. I’d like to start by discussing the progress on the project.</p>
-                            <p><strong>Boss:</strong> Sure, please go ahead.</p>
-                            <p><strong>Employee 1:</strong> We’ve completed the first phase and are moving to the second phase now.</p>
-                            <p><strong>Boss:</strong> Sounds good. Any challenges so far?</p>
-                            <p><strong>Employee 1:</strong> We have encountered a few delays due to technical issues, but we are on track to finish by the deadline.</p>
-
-                            <h5>Conversation Example 2</h5>
-                            <p><strong>Boss:</strong> We are considering some changes to the company structure. I’d like to hear your opinions.</p>
-                            <p><strong>Employee 1:</strong> I believe the changes would improve workflow efficiency, but some employees might face initial challenges adjusting.</p>
-                            <p><strong>Boss:</strong> Good point. We’ll make sure to offer proper training and support during the transition.</p>
-
-                            <h5>Conversation Example 3</h5>
-                            <p><strong>Employee:</strong> I’d like to present an idea I have for improving our workflow.</p>
-                            <p><strong>Boss:</strong> Please go ahead. I’m interested to hear your suggestion.</p>
-                            <p><strong>Employee:</strong> I think we should implement an automated system for scheduling meetings. It would save time and reduce errors.</p>
-                            <p><strong>Boss:</strong> That’s a great idea. Let’s discuss this further after the meeting.</p>
-
-                            <h5>Conversation Example 4</h5>
-                            <p><strong>Boss:</strong> I want to thank you all for your hard work over the past month.</p>
-                            <p><strong>Employee 1:</strong> Thank you, we appreciate your leadership and support.</p>
-                            <p><strong>Boss:</strong> Keep up the great work. Let’s continue improving as a team.</p>
-
-                            <h5>Conversation Example 5</h5>
-                            <p><strong>Employee:</strong> Could we arrange a meeting to discuss the new project proposal?</p>
-                            <p><strong>Boss:</strong> Yes, let’s schedule it for tomorrow morning.</p>
-                        </div>
                     </li>
+                    <div id="formalMeetingConversation" class="conversation-section">
+                        <h5>Conversation Example 1</h5>
+                        <p><strong>Boss:</strong> Good afternoon, everyone. Let’s begin the meeting.</p>
+                        <p><strong>Employee 1:</strong> Good afternoon. I’d like to start by discussing the progress on the project.</p>
+                        <p><strong>Boss:</strong> Sure, please go ahead.</p>
+                        <p><strong>Employee 1:</strong> We’ve completed the first phase and are moving to the second phase now.</p>
+                        <p><strong>Boss:</strong> Sounds good. Any challenges so far?</p>
+                        <p><strong>Employee 1:</strong> We have encountered a few delays due to technical issues, but we are on track to finish by the deadline.</p>
+
+                        <h5>Conversation Example 2</h5>
+                        <p><strong>Boss:</strong> We are considering some changes to the company structure. I’d like to hear your opinions.</p>
+                        <p><strong>Employee 1:</strong> I believe the changes would improve workflow efficiency, but some employees might face initial challenges adjusting.</p>
+                        <p><strong>Boss:</strong> Good point. We’ll make sure to offer proper training and support during the transition.</p>
+
+                        <h5>Conversation Example 3</h5>
+                        <p><strong>Employee:</strong> I’d like to present an idea I have for improving our workflow.</p>
+                        <p><strong>Boss:</strong> Please go ahead. I’m interested to hear your suggestion.</p>
+                        <p><strong>Employee:</strong> I think we should implement an automated system for scheduling meetings. It would save time and reduce errors.</p>
+                        <p><strong>Boss:</strong> That’s a great idea. Let’s discuss this further after the meeting.</p>
+
+                        <h5>Conversation Example 4</h5>
+                        <p><strong>Boss:</strong> I want to thank you all for your hard work over the past month.</p>
+                        <p><strong>Employee 1:</strong> Thank you, we appreciate your leadership and support.</p>
+                        <p><strong>Boss:</strong> Keep up the great work. Let’s continue improving as a team.</p>
+
+                        <h5>Conversation Example 5</h5>
+                        <p><strong>Employee:</strong> Could we arrange a meeting to discuss the new project proposal?</p>
+                        <p><strong>Boss:</strong> Yes, let’s schedule it for tomorrow morning.</p>
+                    </div>
 
                     <!-- Informal Meeting Conversation -->
                     <li class="list-group-item conversation-header" data-target="informalMeetingConversation">
                         Informal Meeting Conversation
-                        <div id="informalMeetingConversation" class="conversation-section">
-                            <h5>Conversation Example 1</h5>
-                            <p><strong>Friend 1:</strong> Hey! How’s it going?</p>
-                            <p><strong>Friend 2:</strong> Hey! Everything’s great. Just getting some work done. How about you?</p>
-                            <p><strong>Friend 1:</strong> Same here, just finishing up some things for the weekend.</p>
-                            <p><strong>Friend 2:</strong> Nice! Do you want to grab some coffee later?</p>
-                            <p><strong>Friend 1:</strong> Sure, that sounds good! Let’s meet at 5 PM.</p>
-
-                            <h5>Conversation Example 2</h5>
-                            <p><strong>Friend 1:</strong> I saw the new movie last night. It was awesome!</p>
-                            <p><strong>Friend 2:</strong> Really? I’ve been wanting to watch it. What’s it about?</p>
-                            <p><strong>Friend 1:</strong> It’s a sci-fi thriller. The plot twists are amazing!</p>
-                            <p><strong>Friend 2:</strong> Sounds great! I’ll check it out this weekend.</p>
-
-                            <h5>Conversation Example 3</h5>
-                            <p><strong>Friend 1:</strong> Do you want to go on a trip next month?</p>
-                            <p><strong>Friend 2:</strong> That sounds amazing! Where should we go?</p>
-                            <p><strong>Friend 1:</strong> How about the beach? We can relax and enjoy the sun.</p>
-                            <p><strong>Friend 2:</strong> Perfect! Let’s plan it!</p>
-
-                            <h5>Conversation Example 4</h5>
-                            <p><strong>Friend 1:</strong> How was your weekend?</p>
-                            <p><strong>Friend 2:</strong> It was great! I went hiking with some friends. How about you?</p>
-                            <p><strong>Friend 1:</strong> I just stayed home and caught up on some TV shows.</p>
-
-                            <h5>Conversation Example 5</h5>
-                            <p><strong>Friend 1:</strong> What’s your plan for the holidays?</p>
-                            <p><strong>Friend 2:</strong> I’m going to visit my family. It’s been a while since I saw them!</p>
-                            <p><strong>Friend 1:</strong> That sounds nice. I’m planning to travel with some friends.</p>
-                        </div>
                     </li>
+                    <div id="informalMeetingConversation" class="conversation-section">
+                        <h5>Conversation Example 1</h5>
+                        <p><strong>Friend 1:</strong> Hey! How’s it going?</p>
+                        <p><strong>Friend 2:</strong> Hey! Everything’s great. Just getting some work done. How about you?</p>
+                        <p><strong>Friend 1:</strong> Same here, just finishing up some things for the weekend.</p>
+                        <p><strong>Friend 2:</strong> Nice! Do you want to grab some coffee later?</p>
+                        <p><strong>Friend 1:</strong> Sure, that sounds good! Let’s meet at 5 PM.</p>
 
+                        <h5>Conversation Example 2</h5>
+                        <p><strong>Friend 1:</strong> I saw the new movie last night. It was awesome!</p>
+                        <p><strong>Friend 2:</strong> Really? I’ve been wanting to watch it. What’s it about?</p>
+                        <p><strong>Friend 1:</strong> It’s a sci-fi thriller. The plot twists are amazing!</p>
+                        <p><strong>Friend 2:</strong> Sounds great! I’ll check it out this weekend.</p>
+
+                        <h5>Conversation Example 3</h5>
+                        <p><strong>Friend 1:</strong> Do you want to go on a trip next month?</p>
+                        <p><strong>Friend 2:</strong> That sounds amazing! Where should we go?</p>
+                        <p><strong>Friend 1:</strong> How about the beach? We can relax and enjoy the sun.</p>
+                        <p><strong>Friend 2:</strong> Perfect! Let’s plan it!</p>
+
+                        <h5>Conversation Example 4</h5>
+                        <p><strong>Friend 1:</strong> How was your weekend?</p>
+                        <p><strong>Friend 2:</strong> It was great! I went hiking with some friends. How about you?</p>
+                        <p><strong>Friend 1:</strong> I just stayed home and caught up on some TV shows.</p>
+
+                        <h5>Conversation Example 5</h5>
+                        <p><strong>Friend 1:</strong> What’s your plan for the holidays?</p>
+                        <p><strong>Friend 2:</strong> I’m going to visit my family. It’s been a while since I saw them!</p>
+                        <p><strong>Friend 1:</strong> That sounds nice. I’m planning to travel with some friends.</p>
+                    </div>
                 </ul>
             </div>
         </div>
     </div>
- <!-- Footer Section -->
+
+    <!-- Footer Section -->
     <footer class="footer">
         <p>Website Visits: <span id="visitCounter">Loading...</span></p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // JavaScript to fetch the visit count and display it
-        document.addEventListener("DOMContentLoaded", function() {
+        // JavaScript to toggle the conversation sections on click
+        document.addEventListener("DOMContentLoaded", function () {
+            const conversationHeaders = document.querySelectorAll('.conversation-header');
+            conversationHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const target = document.getElementById(header.getAttribute('data-target'));
+                    target.style.display = target.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+
             // Fetch the visit counter from the PHP file
             fetch('counter.php')
                 .then(response => response.text())
                 .then(data => {
-                    // Display the counter value in the footer
                     document.getElementById('visitCounter').textContent = data;
                 })
                 .catch(error => {
@@ -179,4 +203,5 @@
         });
     </script>
 </body>
+
 </html>
